@@ -1,0 +1,55 @@
+# Local secrets and identities
+.secrets/
+*.env
+*.key
+*keypair*.bin
+enclave_keypair.bin
+sovereign_identity.json
+cortex_config.json
+authorized_models.json
+
+# Build output
+build/
+dist/
+dist_package/
+cmake-build-*/
+out/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+
+# Dependencies and generated package caches
+node_modules/
+node_dist/
+__pycache__/
+*.pyc
+
+# Browser/WebView profiles and runtime caches
+QuantumProfile/
+**/QuantumProfile/
+**/EBWebView/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and temporary output
+*.log
+tmp_*
+*_stdout.txt
+*_stderr.txt
+tasks_full.txt
+tasks_utf8.txt
+
+# Large local model artifacts - use Git LFS or release assets
+*.safetensors
+*.pt
+*.gguf
+native_core/sovereign_alpha_model_v1/
+native_core/sovereign_alpha_onnx/
+
+# IDE
+.idea/
+.vscode/
